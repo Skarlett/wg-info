@@ -29,7 +29,8 @@ PROGRAM = os.environ.get("PROGRAM", "wg")
 
 def setGlobals():
   global OUTPUT, REDFMT, BLUEFMT, REDBLDFMT, \
-    GREENBLDFMT, YELLOWFMT, YELLOWBLDFMT, BLDFMT, ENDFMT
+    GREENBLDFMT, YELLOWFMT, YELLOWBLDFMT, BLDFMT, ENDFMT, \
+    ENCODING
 
   OUTPUT = os.environ.get("WG_OUTPUT", "pipe")
   if sys.stdout.isatty():
