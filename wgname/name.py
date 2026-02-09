@@ -84,7 +84,7 @@ def show_info(peers, interface="all"):
   except Exception as e:
     return
 
-  for i, line in emunerate(call.decode('utf-8').split("\n")[:-1]):
+  for i, line in enumerate(call.decode('utf-8').split("\n")[:-1]):
     line = line.strip()
 
     if line.startswith('peer:'):
