@@ -9,7 +9,7 @@ import threading
 import argparse
 import sys
 
-from __init__ import read_names, is_base64, normal_json_item, punctuation
+from . import read_names, is_base64, normal_json_item, punctuation
 
 OUTPUT = 'pipe'
 REDFMT = ''
