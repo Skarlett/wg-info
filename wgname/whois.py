@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-from __init__ import get_peers
+from . import get_peers
 
 
 def main():
