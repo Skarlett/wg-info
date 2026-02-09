@@ -66,8 +66,9 @@ def setGlobals():
     ENDFMT = '\033[0m'
 
   else:
-    print("WG_OUTPUT must equal to pipe|tty|html")
-    return -1
+    ENCODING="b64"
+    OUTPUT="tty"
+    
   return 0
 
 def show_pubkey(value, encoding=ENCODING):
