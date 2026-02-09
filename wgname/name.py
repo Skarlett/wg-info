@@ -106,6 +106,7 @@ def show_info(peers, interface="all"):
       print(GREENBLDFMT + 'interface' + ENDFMT + ': ' + GREENFMT + interface + ENDFMT)
 
     elif line:
+      print(line)
       key = line.split(':')[0].strip()
       value = line.split(':', 1)[1].strip()
       indent = '  ' if peer_section else '  '
