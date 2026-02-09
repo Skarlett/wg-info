@@ -95,8 +95,6 @@ def show_info(peers, interface="all"):
       colorfmt = YELLOWFMT
       colorbldfmt = YELLOWBLDFMT
 
-      print(peers)
-      
       if peer_pubkey in peers:
           print(colorbldfmt + 'peer' + ENDFMT + ': ' + colorfmt +
               peers[peer_pubkey]['name'] + ' ('+show_pubkey(peer_pubkey)+')' + ENDFMT)
@@ -140,8 +138,6 @@ def main():
   if OUTPUT == 'html':
     print('<pre>')
 
-  print(peers)
-    
   if len(sys.argv) > 1:
     show_info(peers, sys.argv[1])
   else:
