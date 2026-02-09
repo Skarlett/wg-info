@@ -36,12 +36,11 @@ def setGlobals():
     OUTPUT = "tty";
 
   if not OUTPUT in ["tty", "pipe", "html"]:
-    print("bad value for WG_OUTPUT")
-    exit(1)
+    OUTPUT="tty"
 
   if not ENCODING in ["b32", "b64"]:
     print(f"bad value for WG_ENCODING ({ENCODING})")
-    exit(1)
+    ENCODING="b64"
 
   if OUTPUT == "html":
     REDFMT = '<span style="color: red;">'
